@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>
+        Sorry! Looks like I have no answer for that.
+        Would you like to restart?
+        
+        <button>
+            <text>Main Menu</text>
+            <postback>MAIN MENU</postback>
+        </button>
+    
+    </template>
+  </category>
+</aiml>

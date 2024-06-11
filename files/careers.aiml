@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- List of potential CS Careers -->
+	
+	<category>
+	    <pattern>CAREERS</pattern>
+	    <template>
+	        Visit the links below to find more information about each Computer Science career:
+	        
+	        <delay>1</delay>
+	        <button>
+	            <text>Computer and Information Research Scientists</text>
+	            <url>https://www.computerscience.org/careers/computer-information-researcher/</url>
+	        </button>
+	        
+	        <button>
+	            <text>Software Developers</text>
+	            <url>https://www.computerscience.org/careers/software-developer/</url>
+	        </button>
+	        
+	        <button>
+	            <text>Computer Network Architects</text>
+	            <url>https://www.mynextmove.org/profile/summary/15-1241.00</url>
+	        </button>
+	        
+	        <button>
+	            <text>Information Security Analysts</text>
+	            <url>https://www.computerscience.org/careers/information-security-analyst/</url>
+	        </button>
+	        
+	        <button>
+	            <text>Database Administrators</text>
+	            <url>https://www.computerscience.org/careers/database-administrator/</url>
+	        </button>
+	        
+	        <delay>1</delay>
+	        <button>
+	            <text>Back to Menu</text>
+	            <postback>MAIN MENU</postback>
+	        </button>
+	    </template>
+	</category>
+</aiml>

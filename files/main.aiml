@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<!-- Main Menu & Initial Greeting -->
+<category>
+    <pattern><set>greetings</set></pattern>
+    <template>
+        Hello there - My name is cscareerhelp and I am here to help you get
+        started on your future CS Career!
+        
+        <delay>1</delay>
+        Would you like to take a quiz to find your potential career path?
+        
+        <button>
+            <text>Career Path Quiz</text>
+            <postback>QUIZ</postback>
+        </button>
+        
+        <delay>1</delay>
+        If not, I can also show you a list of the top CS careers today.
+        
+        <button>
+            <text>Top CS Careers</text>
+            <postback>CAREERS</postback>
+        </button>
+    </template>
+</category>
+<category>
+    <pattern>MAIN MENU</pattern>
+    <template>
+        Would you like to take a quiz to find your potential career path?
+        
+        <button>
+            <text>Career Path Quiz</text>
+            <postback>QUIZ</postback>
+        </button>
+        
+        <delay>1</delay>
+        If not, I can also show you a list of the top CS careers today.
+        
+        <button>
+            <text>Top CS Careers</text>
+            <postback>CAREERS</postback>
+        </button>
+        
+        <delay>1</delay>
+        You can also visit our website to schedule an appointment with your
+        career advisor.
+
+        <button>
+            <text>WGU Career Advisors</text>
+            <url>https://www.wgu.edu/</url>
+        </button>
+        
+    </template>
+</category>
+</aiml>

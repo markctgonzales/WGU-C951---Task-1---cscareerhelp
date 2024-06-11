@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Quiz to suggest a potential career -->
+	
+	<category>
+	    <pattern>QUIZ</pattern>
+	    <template>
+	        Please answer the following questions with yes or no depending on
+	        how well the job description aligns with your strengths and preferences.
+	        
+	        <delay>1</delay>
+	        Would you like to begin?
+	        <button>
+	            <text>Yes</text>
+	            <postback>CAIRS QUESTION</postback>
+	        </button>
+	        <button>
+	            <text>No</text>
+	            <postback>MAIN MENU</postback>
+	        </button>
+	    </template>
+	</category>
+
+	
+		<!-- Computer and Information Research Scientist -->
+	
+	<category>
+	    <pattern>CAIRS QUESTION</pattern>
+	    <template>
+	        Would you like to create new and emerging technologies by conducting
+	        experiments and analyzing data to find solutions to diverse computing
+	        problems?
+	        
+	        <button>
+	            <text>Yes</text>
+	            <postback>CAIRS INFO</postback>
+	        </button>
+	        <button>
+	            <text>No</text>
+	            <postback>SDS QUESTION</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>CAIRS INFO</pattern>
+	    <template>
+	        You could be a Computer and Information Research Scientist!
+	        <delay>1</delay>
+	        Click the link below to learn more about this career or click
+	        Other Careers to look at a list of other career options.
+	        
+	        <button>
+	            <text>Computer and Information Research Scientist</text>
+	            <url>https://www.computerscience.org/careers/computer-information-researcher/</url>
+	        </button>
+	        
+	        <button>
+	            <text>Other Careers</text>
+	            <postback>CAREERS</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	
+	<!-- Software Developers -->
+	
+	<category>
+	    <pattern>SDS QUESTION</pattern>
+	    <template>
+	        Would you like to design,build, and implement software to meet users
+	        needs by employing diagrams and models, writing code, and ensuring
+	        overall functionality?
+	        
+	        <button>
+	            <text>Yes</text>
+	            <postback>SDS INFO</postback>
+	        </button>
+	        <button>
+	            <text>No</text>
+	            <postback>CNAS QUESTION</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>SDS INFO</pattern>
+	    <template>
+	        You could be a Software Developer!
+	        <delay>1</delay>
+	        Click the link below to learn more about this career or click
+	        Other Careers to look at a list of other career options.
+	        
+	        <button>
+	            <text>Software Developer</text>
+	            <url>https://www.computerscience.org/careers/software-developer/</url>
+	        </button>
+	        
+	        <button>
+	            <text>Other Careers</text>
+	            <postback>CAREERS</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	
+	<!-- Computer Network Architects -->
+	
+	<category>
+	    <pattern>CNAS QUESTION</pattern>
+	    <template>
+	        Would you like to design and implement computer and information networks,
+	        such as local area networks, wide area networks, intranets, extranets,
+	        and other data communication networks?
+	        <button>
+	            <text>Yes</text>
+	            <postback>CNAS INFO</postback>
+	        </button>
+	        <button>
+	            <text>No</text>
+	            <postback>ISAS QUESTION</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>CNAS INFO</pattern>
+	    <template>
+	        You could be a Computer Network Architect!
+	        <delay>1</delay>
+	        Click the link below to learn more about this career or click
+	        Other Careers to look at a list of other career options.
+	        
+	        <button>
+	            <text>Computer Network Architect</text>
+	            <url>https://www.mynextmove.org/profile/summary/15-1241.00</url>
+	        </button>
+	        
+	        <button>
+	            <text>Other Careers</text>
+	            <postback>CAREERS</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	
+	<!-- Information Security Analysts -->
+	
+	<category>
+	    <pattern>ISAS QUESTION</pattern>
+	    <template>
+	        Would you like to keep your company's data and computer systems safe
+	        from cyberattacks by installing protective software, watching for potential breaches,
+	        and responding to any attacks that occur?
+	        <button>
+	            <text>Yes</text>
+	            <postback>ISAS INFO</postback>
+	        </button>
+	        <button>
+	            <text>No</text>
+	            <postback>DBAS QUESTION</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>ISAS INFO</pattern>
+	    <template>
+	        You could be a Information Security Analyst!
+	        <delay>1</delay>
+	        Click the link below to learn more about this career or click
+	        Other Careers to look at a list of other career options.
+	        
+	        <button>
+	            <text>Information Security Analyst</text>
+	            <url>https://www.computerscience.org/careers/information-security-analyst/</url>
+	        </button>
+	        
+	        <button>
+	            <text>Other Careers</text>
+	            <postback>CAREERS</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	
+	<!-- Database Administrator -->
+	
+	<category>
+	    <pattern>DBAS QUESTION</pattern>
+	    <template>
+	        Would you like to create and maintain databases for your company's needs by
+	        overseeing database updates, storage, security, and troubleshooting?
+	        <button>
+	            <text>Yes</text>
+	            <postback>DBAS INFO</postback>
+	        </button>
+	        <button>
+	            <text>No</text>
+	            <postback>CAIRS QUESTION</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>DBAS INFO</pattern>
+	    <template>
+	        You could be a Database Administrator!
+	        <delay>1</delay>
+	        Click the link below to learn more about this career or click
+	        Other Careers to look at a list of other career options.
+	        
+	        <button>
+	            <text>Database Administrator</text>
+	            <url>https://www.computerscience.org/careers/database-administrator//</url>
+	        </button>
+	        
+	        <button>
+	            <text>Other Careers</text>
+	            <postback>CAREERS</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	
+</aiml>
